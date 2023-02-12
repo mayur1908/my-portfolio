@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title> My Personal-Portfollio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -35,10 +37,46 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Seeking of an oportunity to utilise my skill and Knowledge to growth of an organization.</p>
+                    <p> I am a quick learner , enthusiastic person , and i've leadership qualities as i  myself am a 
+                        volunteer of an NGO which name is "Vision Of Transforming Nation FOUNDATION Bhanadara" 
+                        It works for all the firm but it specially work for poor 
+                        student to educate them.<br>
+                        And I compleated One Month internship at "THE SPARKS FOUNDATION" as a web developer.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link "onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-containts active-link " id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>HTML5<br>CSS3<br>JavaScript<br>React</li>
+                            <li><span>Programming</span><br>C Language<br>C++<br>Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containts" id="experience">
+                        <ul>
+                            <li><span>Compleated 1 - Month Internship</span><br>The Spark Foundation</li>
+                            <li><span> 2023 - Current</span><br>Geecon System,Pvt.Ltd</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containts" id="education">
+                        <ul>
+                            <li><span>2016-2017</span><br>Compleated SSC from B.L.N.M High School Bhanadara</li>
+                            <li><span>2018-2019</span><br>Compleated HSC from Bhimatai Jr College of Mohadi,Bhanadara</li>
+                            <li><span>2019-2023</span><br>Currently Pursuing  Bachelor of Technology in Electrical Department from G.H Raisoni College Of Engineering,Nagpur </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontaints = document.getElementsByClassName("tab-containts");
+        
+    </script>
 </body>
+
 </html>

@@ -7,20 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My Personal-Portfollio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/76c230ee7c.js" crossorigin="anonymous"></script></head>
+    <script src="https://kit.fontawesome.com/76c230ee7c.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="image/logo2.jpg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -82,34 +85,102 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Developer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias numquam voluptatum hic laudantium
-                        cum aliquid a, consequatur aperiam dolores dicta rem suscipit illum quam quas delectus excepturi
-                        adipisci. Fugiat, ducimus?</p>
-                       <a href="#"> Learn more</a>
+                    <p>“A successful website does three things:
+                        It attracts the right kinds of visitors.
+                        Guides them to the main services or product you offer.
+                        Collect Contact details for future ongoing relation.”</p>
+                    <a href="#"> Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Designer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias numquam voluptatum hic laudantium
-                        cum aliquid a, consequatur aperiam dolores dicta rem suscipit illum quam quas delectus excepturi
-                        adipisci. Fugiat, ducimus?</p>
-                       <a href="#"> Learn more</a>
+                    <p>A Web designing and development companies in India which is result oriented. We deliver a nice
+                        website design and execute digital marketing campaigns that lead to the success of the clients.
+                        we're a preferred Website designing Company we design and develop a website that will certainly
+                        attract masses to visit you.”</p>
+                    <a href="#"> Learn more</a>
                 </div>
                 <div>
                     <i class="fa-sharp fa-solid fa-lightbulb"></i>
                     <h2>Electrical Engineer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias numquam voluptatum hic laudantium
-                        cum aliquid a, consequatur aperiam dolores dicta rem suscipit illum quam quas delectus excepturi
-                        adipisci. Fugiat, ducimus?</p>
-                       <a href="#"> Learn more</a>
+                    <p>Electrical engineering is an engineering discipline concerned with the study, design, and
+                        application of equipment, devices, and systems which use electricity, electronics, and
+                        electromagnetism.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================Portfolio=========== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-2.png" alt="Cricket-Keeper">
+                    <div class="layer">
+                        <h3>Cricket Score Card App</h3>
+                        <p>
+                            This app is collect a score of two opposite teams and show score.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-1.png" alt="Link-Tree">
+                    <div class="layer">
+                        <h3>Cricket Score Card App</h3>
+                        <p>
+                            This app is collect a score of two opposite teams and show score.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png" alt="Education-webpage">
+                    <div class="layer">
+                        <h3>Cricket Score Card App</h3>
+                        <p>
+                            This app is collect a score of two opposite teams and show score.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
 
             </div>
-
         </div>
     </div>
-
-
+    <!-- =================Contact=========== -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="Contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-inbox"></i> mayursonksuare1155@gmail.com</p>
+                    <p> <i class="fa-sharp fa-solid fa-phone"></i> 9637003670</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/mayur1908"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mayur-sonkusare-8305a121b/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mayur_sonkusare_/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="image/My-CV.pdf" Download class="btn">Download CV</a>
+                </div>
+                <div class="Contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit " class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Hey:-😉)<br> I'ts My Portfoilio <i class="fa-solid fa-heart"></i> 😉:-).</p>
+        </div>
+    </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-content");
@@ -122,8 +193,34 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
-
         }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwZ4j-xiF6c1MbPBdjZFTCoDT2j-UWi1LyCu055llVSKY7bgbNPhMJehDjLkOxQzbRTxw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Succesfully😉"
+                    setTimeout(function () {
+                        msg.innerHTML = " "
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
